@@ -107,6 +107,7 @@ public extension UIScrollView {
         self.pullToRefreshView = pullToRefreshView
         pullToRefreshView.actionHandler = actionHandler
         pullToRefreshView.loadingView = loadingView
+        pullToRefreshView.originalContentInsetTop = contentInset.top
         addSubview(pullToRefreshView)
 
         pullToRefreshView.observing = true
